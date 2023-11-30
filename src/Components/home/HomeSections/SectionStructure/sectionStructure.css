@@ -1,0 +1,8 @@
+@import 'index.css';
+
+.section-structure {
+    display:flex ;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+}

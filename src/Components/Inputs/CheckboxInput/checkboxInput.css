@@ -1,0 +1,28 @@
+.filter-label{
+    text-align: start;
+    font-size: 16px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.filter-label:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.filter-checkbox {
+    margin-right: 5px;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.filter-checkbox:checked {
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--black-color);
+    opacity: 1;
+}

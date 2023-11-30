@@ -1,0 +1,57 @@
+@import 'index.css';
+
+.donation-aside {
+    width: 22%;
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+    background-color: var(--background-card-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.donation-form-section {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.donation-form-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: max-content;
+    border-radius: 20px;
+    background-color: var(--background-card-color);
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: var(--p-font);
+}
+
+.donation-aside, 
+.donation-form-content,
+.colaborators-content {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 4%;
+    height: max-content;
+}
+
+.p-data-info {
+    margin-top: 5%;
+}
+
+.colaborators-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10%;
+    grid-auto-rows: minmax(100px, auto);
+    background-color: var(--background-card-color);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}

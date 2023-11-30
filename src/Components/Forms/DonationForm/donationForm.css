@@ -1,0 +1,48 @@
+@import 'index.css';
+
+.donation-form {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--black-color);
+    padding: 3%;
+}
+
+.donation-options {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.donation.grupoInput {
+    width: 70%;
+}
+
+.label-options {
+    margin: 3%;
+    font-weight: 600;
+}
+
+#donation {
+    border-radius: 15px;
+    line-height: 23px;
+    border: 1px solid var(--black-color);
+    width: 100%;
+    padding-left: 15px;
+    max-height: 35px;
+    font-size: 1rem;
+}
+
+.donation-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    /* Da una forma redondeada */
+    margin: 20% auto;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    cursor: pointer;
+}

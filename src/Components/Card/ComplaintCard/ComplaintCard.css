@@ -1,0 +1,49 @@
+/* DenunciaCard.css */
+
+.card-complaints {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    min-height: 410px;
+    max-width: 30%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.card-complaints img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.card-complaints h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.card-complaints p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px; /* Quitado el margen inferior */
+
+}
+.card-complaints button {
+    margin-top: 10px;
+    position: absolute;
+    bottom: 5%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, 50%); /* Ajusta la posición centrada */
+    font-size: 1rem; /* Ajusta el tamaño de fuente */
+    text-decoration-line: underline;
+    color: blue;
+}
+.card-complaints button:hover{
+    color: rgb(115, 10, 213);
+}
+
+/* Asegúrate de ajustar los estilos según tus necesidades */

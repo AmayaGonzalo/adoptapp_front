@@ -1,0 +1,15 @@
+.requirement.container-block {
+    overflow: hidden;
+}
+
+.requirement-list {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.requirement-li {
+    list-style: disc;
+}

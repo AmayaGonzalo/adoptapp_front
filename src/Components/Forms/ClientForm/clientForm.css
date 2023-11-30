@@ -1,0 +1,105 @@
+/* Estilos para componente Input */
+.client-form {
+  margin: auto;
+  height: max-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-input {
+  border-radius: 15px;
+  line-height: 4vh;
+  border: 1px solid var(--black-color);
+  width: 100%;
+  padding-left: 15px;
+  max-height: 35px;
+}
+
+
+.client-form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+  label {
+    margin-bottom: 8px;
+    font-size: 15px;
+    width: 90%;
+  }
+  .input-container{
+    position: relative;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .input-container input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #2c4766;
+    color: black;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    /* color:#fff; */
+    padding: 0 20px;
+    transition: 0.5s;
+  }
+
+  .input-container input:focus,
+  .input-container input:valid{
+    border-color: var(--main-bg-color);
+  }
+
+  .input-container label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    background-color: white;
+    pointer-events: none;
+    transition: 0.1s ease;
+  }
+
+  .input-container input:focus ~ label,
+  .input-container input:valid ~ label{
+    top: 1px;
+    font-size: 0.9em;
+    padding: 0 6px;
+    width: auto;
+  }
+
+  .btn-form-div {
+    display: flex;
+    width: 100%;
+}
+
+  .btn-register-form {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    /* Da una forma redondeada */
+    margin: -20px 0px 0px 220px;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.checkbox-form {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 3% auto;
+}
+
+.checkbox-form .filter-box {
+  margin: 3px;
+}
+
+.checkbox-form .filter-box .filter-title {
+  font-size: 1rem;
+  font-weight: 600;
+}

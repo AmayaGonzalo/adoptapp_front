@@ -1,0 +1,157 @@
+@import 'index.css';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+	/*background:linear-gradient(190deg,rgb(81, 90, 81), rgb(51, 42, 42));*/
+    margin-top: 3%;
+    font-family: var(--p-font);
+    color: var(--white-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 30%; 
+    margin: 10px auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 1.5rem;
+}
+.contact-list li {
+	margin-top: 10px;
+}
+.footer-icon {
+    margin-top: 10px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: space-around;
+	width: 60%;
+	margin: 25px auto;
+    font-size: 2em;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.icon-list li:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.fa-whatsapp:hover {
+    color: rgb(108, 233, 108);
+}
+
+.fa-facebook-f:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 55, 0);
+}
+
+.form-newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+.newsletter-label {
+    width: 100%;
+}
+.newsletter {
+    width: 75%;
+    height: 30px;
+    text-align: start;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding-left: 15px;
+	margin-top: 15px;
+}
+
+.newsletter-btn {
+    border: 1px solid var(--white-color);
+    width: 25%;
+    cursor: pointer;
+    height: 30px;
+    margin-top: auto;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: 3rem;
+    border-top: 1px solid var(--white-color);
+    width: 95%;
+    color: var(--black-color);
+}
+.scroll-to-top {
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--white-color);
+    border: 1px solid var(--background-card-color);
+}
+/* Estilos para tablet */
+@media (max-width: 768px) {
+    .footer-content {
+        justify-content: center;
+    }
+
+    .footer-section {
+        max-width: 40%;
+    }
+
+    .icon-list {
+        width: 70%;
+    }
+
+    .newsletter {
+        width: 80%;
+    }
+
+    .newsletter-btn {
+        width: 30%;
+    }
+}
+
+/* Estilos para teléfono móvil */
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+    }
+
+    .icon-list {
+        width: 100%;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter-btn {
+        width: 100%;
+    }
+}

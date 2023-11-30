@@ -1,0 +1,55 @@
+/* Estilos para componente Input */
+.adoption-form {
+    margin: auto;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-input {
+    border-radius: 15px;
+    line-height: 4vh;
+    border: 1px solid var(--black-color);
+    width: 100%;
+    padding-left: 15px;
+    max-height: 35px;
+}
+
+.adoption-form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-form-div {
+    display: flex;
+    width: 100%;
+}
+
+.btn-adopt-form {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    /* Da una forma redondeada */
+    margin: auto;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.checkbox-form {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 3% auto;
+}
+
+.checkbox-form .filter-box {
+    margin: 3px;
+}
+
+.checkbox-form .filter-box .filter-title {
+    font-size: 1rem;
+    font-weight: 600;
+}

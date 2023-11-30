@@ -1,0 +1,20 @@
+.pagination-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor:pointer;
+    margin: auto 2%;
+    font-size: 16px;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-family: var(--p-font);
+}
+.next-pag-btn, .previous-pag-btn {
+    width: 70%;
+    height: auto;
+}
+#next-btn, #previous-btn {
+    background-color:  var(--background-card-color);
+}

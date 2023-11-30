@@ -1,0 +1,235 @@
+.pet-card {
+    background-color: var(--background-card-color);
+    display: flex;
+    justify-content: space-between;
+    width: 47%;
+    min-width: 400px;
+    height: 230px;
+    border-radius: 20px;
+    transition: 0.5s ease all;
+    opacity: 0.9;
+    font-family: 'Gilroy-Regular', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+}
+
+.pet-card:hover {
+    box-shadow: 2px 2px 15px rgba(24, 19, 19, 0.5);
+    opacity: 1;
+}
+
+.pet-card:hover .description-btn {
+    opacity: 1;
+    transition: 0.5s ease all;
+}
+
+.img-description-container {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-content {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    height: 15%;
+}
+
+.pet-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+}
+
+.pet-description {
+    font-size: 1.2rem;
+}
+
+.card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.img-sex-div {
+    top: 0;
+    right: 8px;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+}
+
+.img-sex {
+    width: 100%;
+    height: 100%;
+}
+
+.attributes-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+}
+
+.adopt-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 30px;
+    background-color: var(--main-bg-color);
+    color: var(--white-color);
+    margin: 5%;
+}
+
+.pet-interested {
+    font-size: 1rem;
+}
+
+.div-description {
+    background-color: rgba(232, 243, 221, 0.932);
+    width: 100%;
+    top: 0;
+    position: absolute;
+    height: max-content;
+}
+
+.ocult {
+    height: 0;
+    overflow: hidden;
+    display: none;
+}
+
+.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.description-btn {
+    background-color: var(--main-bg-color);
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+    padding: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    .pet-card {
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 15px;
+    }
+    
+    .card-content {
+        width: 50%;
+    }
+    
+    .img-description-container {
+        width: 40%;
+    }
+    
+    .img-sex-div {
+        top: 8px;
+        right: 8px;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .attributes-list {
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    .adopt-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+        margin: 2%;
+    }
+    
+    .pet-interested {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 480px) {
+    .pet-card {
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 15px;
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .img-description-container {
+        width: 100%;
+    }
+    
+    .card-content {
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    .card-title {
+        height: auto;
+    }
+    
+    .pet-name {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .pet-description {
+        font-size: 1rem;
+    }
+    
+    .img-sex-div {
+        top: 5px;
+        right: 5px;
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+    
+    .attributes-list {
+        height: auto;
+        margin-top: 5px;
+    }
+    
+    .adopt-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+        margin: 2% auto;
+    }
+    
+    .pet-interested {
+        font-size: 0.8rem;
+    }
+}

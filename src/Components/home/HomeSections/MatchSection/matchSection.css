@@ -1,0 +1,9 @@
+.match.container-block {
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+.match-text {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
